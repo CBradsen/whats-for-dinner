@@ -95,7 +95,6 @@ textarea {
   padding: 0; /* 2 */
 }
 
-
 details {
   display: block;
 }
@@ -108,7 +107,7 @@ template {
   display: none;
 }
 
-[hidden] {
+.hidden {
   display: none;
 }
 
@@ -185,6 +184,10 @@ form {
   align-items: center;
 }
 
+#dish-suggestions {
+  font-size: 1em;
+}
+
 #lets-cook {
   border-radius: 3px;
   background-color: #0fb9b1;
@@ -203,8 +206,8 @@ form {
   font-size: .7em;
   color: white;
   padding: 3px 8px;
-  margin-inline-start: auto;
-  margin-bottom: -2px;
+  margin-inline-start: 200px;
+  margin-top: 100px
 }
 
 #cookpot {
@@ -212,11 +215,4 @@ form {
   width: auto;
   margin-bottom: 20px
 }
-/* COLORS
-teal - #0fb9b1;
-frosted white - rgba(225, 225, 225, .9);
-grey - #95a5a6;
-red - #ee5253
-
-*/
 
