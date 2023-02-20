@@ -2,8 +2,9 @@ var radioButtons = document.querySelectorAll('input[name="food-type"]');
 var submitButton = document.querySelector("#lets-cook");
 var renderChoice = document.querySelector("#dish-suggestions");
 var clearButton = document.querySelector("#clear");
-var cookpot = document.querySelector("#cookpot");
-var clear = document.querySelector("#clear");
+var cookpot = document.querySelector(".cookpot");
+var clear = document.querySelector(".clear");
+var makeHeadline = document.querySelector("h3");
 
 var food = {
 sides: ["Grilled Watermelon", "Classic Coleslaw", "Mexican Street Corn", "Red Potato Salad", "Corn and Black Bean Salsa", "Southern Fried Okra", "Grilled Corn on the Cob", "Pepper Parmesan Biscuits", "Maple Bacon Brussels Sprouts", "Sweet Potato Casserole with Marshmallow", "Butternut Squash Casserole", "Creamy Potatoes with Chives", "Honey-Glazed Carrots and Parsnips"],
@@ -28,7 +29,9 @@ submitButton.addEventListener("click", chooseDish);
 
 function getRandomDish(foodChoice) {
     var index = Math.floor(Math.random() * foodChoice.length);
-    hide(cookpot)
+    hide(cookpot);
+    show(clear);
+    show(makeHeadline);
     showDish(foodChoice[index]);
   }
 
@@ -37,11 +40,11 @@ function showDish(item) {
 }
 
 function hide(item) {
-  item.classList.add = "hidden"
+  item.classList.add("hidden")
 }
 
 function show(item) {
-  item.classList.remove = "hidden"
+  item.classList.remove("hidden")
 }
   
 

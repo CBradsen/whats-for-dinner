@@ -107,7 +107,7 @@ template {
   display: none;
 }
 
-[hidden] {
+.hidden {
   display: none;
 }
 
@@ -206,8 +206,8 @@ form {
   font-size: .7em;
   color: white;
   padding: 3px 8px;
-  margin-inline-start: auto;
-  margin-bottom: -2px;
+  margin-inline-start: 200px;
+  margin-top: 100px
 }
 
 #cookpot {
