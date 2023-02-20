@@ -95,7 +95,6 @@ textarea {
   padding: 0; /* 2 */
 }
 
-
 details {
   display: block;
 }
@@ -185,6 +184,10 @@ form {
   align-items: center;
 }
 
+#dish-suggestions {
+  font-size: 1em;
+}
+
 #lets-cook {
   border-radius: 3px;
   background-color: #0fb9b1;
@@ -212,11 +215,4 @@ form {
   width: auto;
   margin-bottom: 20px
 }
-/* COLORS
-teal - #0fb9b1;
-frosted white - rgba(225, 225, 225, .9);
-grey - #95a5a6;
-red - #ee5253
-
-*/
 
